@@ -1,0 +1,176 @@
+.page-register-container{
+    display: flex;
+    flex-direction: column;
+    // 使main-panle滚动
+    height: 100%;
+    box-sizing: border-box;
+    .register-content {
+        box-sizing: border-box;
+        height: px2rem(160);
+        box-sizing: border-box;
+        position: fixed;
+        background: #fff;
+        width:100%;
+        z-index: 3;
+    }
+    .register-content-height{
+        height: px2rem(170);
+        width: 100%;
+    }
+    .top-line{
+        position: relative;
+        height: px2rem(10);
+        width: 100%;
+        background: #f8f8f8;
+        z-index:4;
+    }
+    .progress-container{
+        height: px2rem(160);
+        background: #fff;
+        padding:0 px2rem(34);
+        width: 100%;
+        box-sizing: border-box;
+
+
+    }
+    .register-progress {
+       position: relative;
+       box-sizing: border-box;
+       width: 100%;
+        .line{
+            position: absolute;
+            left: 0;
+            top: px2rem(48);
+            width: 100%;
+            height: 1px;
+            background: #a0a0a0;
+        }
+        padding: px2rem(34) px2rem(34) 0 px2rem(34);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .circle-wrap {
+            display: flex;
+        }
+        .circle {
+            z-index: 2;
+            width: px2rem(24);
+            height: px2rem(24);
+            background-color: #ffffff;
+            border: solid 1px #a0a0a0;
+            border-radius: 50%;
+            margin-bottom: px2rem(32);
+        }
+        .progress-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #b2b2b2;
+            .text{
+                font-size: px2rem(32);
+            }
+            &.active{
+                color: #000;
+                .circle{
+                    background-color: $yellow_color;
+                    border: px2rem(6) solid #ffecb2;
+                }
+            }
+        }
+    }
+    .top-panel{
+        // 使main-panle滚动
+        flex-grow: 0;
+    }
+    .main-panel{
+        // 使main-panle滚动
+        flex-grow: 1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling:touch;
+        background: #fff;
+    }
+    .base-container {
+        padding: 0 px2rem(34);
+        .mint-field{
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+        }
+        .mint-cell-wrapper{
+            box-sizing: border-box;
+            padding: 0;
+            align-items: center;
+            background-image: none;
+            width: auto;
+            .mint-cell-text::before{
+                content: '\274B';
+                font-size: px2rem(28);
+                color: red;
+            }
+        }
+        .not-required{
+            .mint-cell-wrapper{
+                box-sizing: border-box;
+                padding: 0;
+                align-items: center;
+                background-image: none;
+                width: auto;
+                .mint-cell-text::before{
+                    content: '';
+                }
+            }
+        }
+        .mint-field .mint-cell-title{
+            text-align: right;
+            // width: auto;
+            padding-right: px2rem(20);
+            // flex-grow: 1;
+            font-size: px2rem(28);
+            white-space: nowrap;
+        }
+        .mint-field .mint-cell-value{
+            box-sizing: border-box;
+            flex: none;
+            max-width: px2rem(420);
+            height: px2rem(68);
+            border:1px solid $border_color;
+            padding: px2rem(10);
+            border-radius: px2rem(10);
+            font-size: px2rem(28);
+        }
+        .mint-popup{
+            width: 100%;
+            background: #fff;
+            z-index: 3;
+            li{
+                line-height: px2rem(80);
+                text-align: center;
+                color: #101010;
+                font-size: px2rem(32);
+                border-bottom: 1px solid #eee;
+                &:active{
+                    background: $border_color;
+                }
+            }
+        }
+    }
+    .address-modal{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.2);
+        z-index:9;
+        .address-selector {
+            border-top: 1px solid #efefef;
+            position: absolute;
+            bottom: 0;
+            background: #fff;
+            width: 100%;
+        }
+    }
+
+  
+}

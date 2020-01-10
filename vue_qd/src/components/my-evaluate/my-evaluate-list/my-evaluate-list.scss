@@ -1,0 +1,65 @@
+.my-evaluate-list-container {
+    position: relative;
+
+    .evaluate-head-pic {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        img {
+            width: px2rem(72);
+        }
+    }
+    .evaluate-content {
+        padding-left: px2rem(102);
+
+        .first-row {
+            display: flex;
+            justify-content: space-between;
+            height: px2rem(36);
+            line-height: px2rem(36);
+
+            .evaluate-name {
+                font-size: px2rem(28);
+            }
+            .evaluate-date {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: px2rem(20);
+                color: #b2b2b2;
+            }
+        }
+        
+        .evaluate-work-time {
+            font-size: px2rem(20);
+            color: #b2b2b2;
+        }
+        .evaluate-grade {
+            height: px2rem(80);
+            line-height: px2rem(80);
+            
+            .title {
+                color: #010101;
+                font-size: px2rem(24);
+                margin-right: px2rem(20);
+            }
+            .stars {
+                img {
+                    margin-right: px2rem(20);
+                    width: px2rem(24);
+                    vertical-align: middle;
+                }
+            }
+            .grade-des {
+                color: #000;
+                font-size: px2rem(24);
+            }
+        }
+        .evaluate-detail {
+            color: #b2b2b2;
+            font-size: px2rem(24);
+        }
+    }
+    
+}

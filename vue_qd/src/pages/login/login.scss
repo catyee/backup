@@ -1,0 +1,106 @@
+.page-login-container{
+    background: #fff;
+    // height: 100%;
+    .logo{
+        display: block;
+        // width: px2rem(426);
+        // height: px2rem(165);
+        width: 50%;
+        margin: 0 auto;
+    }
+    .login-panel{
+        padding: 0 px2rem(50);
+        .mint-cell{
+            min-height: px2rem(74);
+        }
+        .mint-cell-wrapper{
+            width: 100%;
+            background-image: none;
+            border-bottom: px2rem(2) solid #a0a0a0;
+            padding: 0 px2rem(20);
+            input{
+                -webkit-user-select:auto;
+                -moz-user-select:auto;
+                user-select:auto;
+            }
+        }
+        .mint-field .mint-cell-title{
+            width: auto;
+            padding-right: px2rem(16);
+            font-size: px2rem(28);
+        }
+        .mint-cell-value{
+            font-size: px2rem(24);
+            padding: px2rem(10) 0;
+        }
+        .mint-cell:last-child{
+            background-image: none;
+        }
+       
+    }
+    .tip-panel{
+        padding: 0 px2rem(20);
+        display: flex;
+        font-size: px2rem(24);
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            display: flex;
+            align-items: center;
+            .radio-box{
+                position: relative;
+                background: #fff;
+                width: px2rem(24);
+                height: px2rem(24);
+                border: px2rem(2) solid #fff;
+            }
+            input[type="radio"] {
+                position: absolute;
+                display: inline-block;
+                top: 0;
+                left: 0;
+                -webkit-appearance: none;
+                // -moz-appearance: none;
+                // -ms-appearance: none;
+              //  -webkit-appearance: none;
+            
+                &:checked + label::before {
+              
+                  border: px2rem(2) solid #e9be2b;
+                }
+            
+                &:checked + label::after {
+                  content: ' ';
+                  width: px2rem(12);
+                  height: px2rem(12);
+                  left: px2rem(7);
+                  top: px2rem(7);
+                  display: block;
+                  border-radius: 50%;
+                  position: absolute;
+                  background: #e9be2b;
+                }
+        }
+    }
+  
+    label {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        &::before {
+          content: ' ';
+          width: px2rem(24);
+          height: px2rem(24);
+          border: px2rem(2) solid #a0a0a0;
+          left: 0;
+          top: 0px;
+          display: block;
+          border-radius: 50%;
+          
+        }
+      }
+
+ }
+    
+}

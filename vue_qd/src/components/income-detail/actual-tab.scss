@@ -1,0 +1,122 @@
+.income-tab-container {
+    .wrapper{
+        padding: 0 px2rem(40);
+        box-sizing: border-box;
+    }
+    .count {
+        display: flex;
+        justify-content: space-between;
+        // width: px2rem(670);
+        height: px2rem(216);
+        box-shadow: 0px 8px 27px 0px rgba(255, 192, 0, 0.15);
+        border-radius: px2rem(10);
+        margin: px2rem(20) auto;
+        padding: px2rem(30) px2rem(44) 0;
+        box-sizing: border-box;
+        background-image: linear-gradient(0deg, 
+		#ffde00 0%, 
+		#ffc000 100%), 
+	    linear-gradient(
+		#ffffff, 
+		#ffffff);
+
+        & > div {
+            text-align: center;
+            color: #fff;
+            height: 100%;
+            div {
+                font-size: px2rem(24);
+            }
+            p {
+                margin-top: px2rem(30);
+                font-size: px2rem(60);
+                // font-family: $font-Bold;
+            }
+        }
+    }
+    .mescroll {
+        position: fixed;
+        // top: px2rem(236);
+        bottom: 0;
+        height: auto;
+      }
+    .orders {
+        padding: 0 px2rem(20);
+        ul {
+            padding-bottom: px2rem(40);
+
+            li {
+                padding: px2rem(40) px2rem(20);
+                box-shadow: 0px px2rem(8) px2rem(24) 0px 
+                rgba(0, 0, 0, 0.1);
+                background: #fff;
+                margin-bottom: px2rem(20);
+                border-radius: px2rem(10);
+
+                .order-title {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: px2rem(32);
+                    font-family: $font-Regular;
+                    align-items: center;
+
+                    .order-status {
+                        font-size: px2rem(22);
+                        color: #ff0101;
+                    }
+                    .order-status.income-status {
+                        color:  $tip_color;
+                    }
+                }
+                .work-time {
+                    display: flex;
+                    align-items: center;
+                    color: $tip_color;
+                    font-size: px2rem(24);
+                    padding-top: px2rem(20);
+                    div{
+                        padding: 0 px2rem(10);
+                        font-size: px2rem(34);
+                        color: #000;
+                    }
+                }
+                .order-content {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    color: $tip_color;
+                    font-size: px2rem(24);
+                   
+                    .order-time {
+                        div {
+                            padding-top: px2rem(20);
+                            text-align: left;
+                            i {
+                                font-size: px2rem(24);
+                                color: #000;
+                                padding-left: px2rem(10);
+                            }
+                        }
+                    }
+                    .money {
+                        // line-height: px2rem(180);
+                        font-size: px2rem(60);
+                        color: red;
+                        // display: flex;
+                        // align-items: center;
+                        // font-family: $font-Bold;
+
+                        span {
+                            font-size: px2rem(24);
+                            color: $tip_color;
+                            // padding-left: px2rem(20);
+                        }
+                    }
+                    .order-money {
+                        color: #ffc200;
+                    }
+                }
+            }
+        }
+    }
+}

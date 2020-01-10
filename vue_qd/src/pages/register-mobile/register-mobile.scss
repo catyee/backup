@@ -1,0 +1,50 @@
+.register-mobile-container {
+    .content {
+        padding: px2rem(50) px2rem(20) 0;
+        box-sizing: border-box;
+
+        &>div {
+            margin-bottom: px2rem(38);
+        }
+
+        .tellphone, .password {
+            display: flex;
+            width: 100%;
+            height: px2rem(88);
+            line-height: px2rem(88);
+            padding: 0 px2rem(30);
+            box-sizing: border-box;
+            font-size: px2rem(24);
+            border-radius: px2rem(10);
+            border: 1px solid rgba(10, 2, 4, 0.15);
+            input {
+               outline: none;
+               border: none;
+               flex-grow: 1;
+              
+               
+                
+    
+                // 改变placeholder颜色
+                &::-webkit-input-placeholder {
+                    color: $tip_color;
+                    font-size: px2rem(24);
+                }
+            }
+            .tip{
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        .btn {
+            .btn-submit-forbid {
+                color: #5a5a5a;
+                background: #f4f4f4;
+            }
+        }
+        
+    }
+}
+
+// todo ios下键盘唤起 页面滚动

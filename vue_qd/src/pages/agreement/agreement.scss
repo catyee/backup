@@ -1,0 +1,38 @@
+.page-agreement-container {
+  .content{
+      padding: 0 px2rem(40);
+      text-align: justify;
+      font-size: px2rem(24);
+      line-height: px2rem(36); 
+      span{
+        padding-left: px2rem(30);
+      }
+      .title {
+          font-size: px2rem(34);
+          padding: px2rem(60) 0 px2rem(64) 0;
+      }
+      .pd-t-section{
+          padding-top: px2rem(110);
+      }
+      .pd-b-section{
+        padding-bottom: px2rem(110);
+      }
+      .pd-t-title{
+        padding-top: px2rem(44);
+    }
+     .pd-b-title{
+      padding-bottom: px2rem(44);
+     }                                                     
+  }
+}
+.slide-top-enter-active{
+    // will-change: transform;
+    transition: all 0.3s;
+    // position: absolute;
+    // width:100%;
+    // left:0;
+}
+.slide-top-enter {
+    transform: translateY(100%);
+}
+

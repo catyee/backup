@@ -1,0 +1,83 @@
+.order-detail-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    .order-content {
+        flex-grow: 1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling:touch;
+
+        li {
+            height: px2rem(50);
+            line-height: px2rem(50);
+        }
+
+        .order-title {
+            padding: 0 px2rem(40);
+            display: flex;
+            justify-content: space-between;
+            height: px2rem(124);
+            line-height: px2rem(124);
+            background-color: #fff;
+    
+            .group-name {
+                font-size: px2rem(34);
+            }
+            .order-status {
+                font-size: px2rem(24);
+                color: $danger_color;
+            }
+        }
+
+        .order-express {
+            padding: 0 px2rem(40);
+            padding-bottom: px2rem(60);
+            background-color: #fff;
+            font-size: px2rem(28);
+
+            li {
+                color: #7e7e7e;
+                height: auto;
+
+                span,a {
+                    color: #000;
+                }
+
+                .order-prise {
+                    color: red;
+                }
+            }
+        }
+
+        .working-status {
+            padding: px2rem(40);
+            font-size: px2rem(24);
+            background-color: #fff;
+            margin-top: px2rem(14);
+
+            li {
+                height: auto;
+
+                span {
+                    color: $tip_color;
+                }
+
+                i {
+                    color: $danger_color;
+                }
+            }
+        }
+
+        .btn {
+            // padding: px2rem(128) px2rem(40) px2rem(200);
+            padding: px2rem(128) px2rem(40) px2rem(0);
+
+            .btn-submit {
+                box-shadow: 0 px2rem(8) px2rem(27) 0 
+                rgba(255, 192, 0, 0.35);
+            }
+        }
+    }
+    
+}

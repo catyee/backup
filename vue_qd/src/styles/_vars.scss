@@ -1,0 +1,18 @@
+
+  @function px2rem($px) {
+    $rem: 200;
+    @return ($px/$rem) + rem;
+}
+
+// color
+$danger_color: #ff4800;
+$tip_color: #b2b2b2;
+$border_color: #a0a0a0;
+$yellow_color: #ffd800;
+$title_light_color: rgba(0, 0, 0, 0.4);
+$title_deep_color: rgba(0, 0, 0, 0.9);
+// font-family
+$font-Regular: PingFang-SC-Regular;
+$font-Bold: PingFang-SC-Bold;
+$font-Medium: PingFang-SC-Medium;
+$font-Helvetica-Bold: Helvetica-Bold;

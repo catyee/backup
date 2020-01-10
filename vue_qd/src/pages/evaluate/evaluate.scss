@@ -1,0 +1,83 @@
+.evaluate-container {
+
+    .content {
+        padding: px2rem(18) px2rem(40) 0;
+
+        .base-inf {
+            display: flex;
+            justify-content: flex-start;
+
+            .head-pic, .head-pic img {
+                width: px2rem(72);
+                height: px2rem(72);
+            }
+            .head-pic {
+                border-radius: 50%;
+                margin-right: px2rem(30);
+                overflow: hidden;
+            }
+            .express {
+
+                .name {
+                    font-size: px2rem(28);
+                }
+                .date {
+                    font-size: px2rem(20);
+                    color: $tip_color;
+                }
+            }
+        }
+
+        .grade {
+            padding-top: px2rem(36);
+
+            .title {
+                font-size: px2rem(30);
+                color: #010101;
+                margin-right: px2rem(28);
+            }
+            .stars {
+                img {
+                    width: px2rem(30);
+                    margin-right: px2rem(32); 
+                    vertical-align: middle;
+                }
+            }
+            .grade-des {
+                color: #000;
+                font-size: px2rem(30);
+            }
+        }
+
+        .textarea {
+            padding-top: px2rem(50);
+
+            textarea {
+                box-sizing: border-box;
+                width: 100%;
+                height: px2rem(184);
+                border: 1px solid #a0a0a0;
+                border-radius: px2rem(10);
+                padding: px2rem(24);
+                outline: none;
+                resize: none;
+                overflow: scroll;
+
+                // 改变placeholder颜色
+                &::-webkit-input-placeholder {
+                    color: $tip_color;
+                    font-size: px2rem(24);
+                }
+            }
+        }
+
+        .btn {
+            margin-top: px2rem(86);
+
+            .btn-submit-forbid {
+                color: #5a5a5a;
+                background: #f0f0f0;
+            }
+        }
+    }
+}

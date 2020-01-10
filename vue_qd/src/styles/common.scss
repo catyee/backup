@@ -1,0 +1,368 @@
+// 定义公共样式和类
+
+// todo 最终处理状态栏的时候 需要设置phone-statusbar-height和.common-header-container .mint-header的padding-top .mescroll 底部tab
+
+// 颜色
+.color-danger {
+    color: $danger_color;
+}
+.color-white {
+    color: #fff;
+}
+.color-black {
+    color: #000;
+}
+.color-grey {
+    color: $tip_color;
+}
+.color-border{
+    color: $border_color;
+}
+.color-danger {
+    color: $danger_color;
+}
+.color-yellow {
+    color: $yellow_color!important;
+}
+
+// 加粗
+.bold{
+    font-weight: bold;
+}
+// flex 居中
+.common_flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// 居中
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+// margin
+@for $i from 1 to 201 {
+    .mt-#{$i}{
+        margin-top: px2rem($i) !important;
+    }
+    .mr-#{$i} {
+        margin-right: px2rem($i) !important;
+    }
+    .ml-#{$i} {
+        margin-left: px2rem($i) !important;
+    }
+    .mb-#{$i} {
+        margin-bottom: px2rem($i) !important;
+    }
+    .mg-#{$i} {
+        margin: px2rem($i) !important;
+    }
+}
+
+// padding
+@for $i from 1 through 300 {
+    .pt-#{$i} {
+        padding-top: px2rem($i) !important;
+    }
+    .pr-#{$i} {
+        padding-right: px2rem($i) !important;
+    }
+    .pl-#{$i} {
+        padding-left: px2rem($i) !important;
+    }
+    .pb-#{$i} {
+        padding-bottom: px2rem($i) !important;
+    }
+    .pd-#{$i} {
+        padding: px2rem($i) !important
+    }
+}
+
+// font
+@for $i from 1 to 100 {
+    .f#{$i} {
+        font-size: px2rem($i);
+    }
+}
+
+//height
+
+@for $i from 1 to 200 {
+    .height#{$i} {
+       height: px2rem($i);
+       width: 100%;
+    }
+}
+
+
+// btn
+
+.btn-submit {
+    box-sizing: border-box;
+    width: 100%;
+    height: px2rem(88);
+    text-align: center;
+    line-height: px2rem(88);
+    background: linear-gradient(to right,#ffde00,#ffc000);
+    color: #fff;
+    border-radius: px2rem(44);
+    // box-shadow: 0 px2rem(8) px2rem(27) 0 
+    // rgba(255, 192, 0, 0.35);
+}
+
+.btn-submit-normal {
+    box-sizing: border-box;
+    width: 100%;
+    height: px2rem(88);
+    text-align: center;
+    line-height: px2rem(88);
+    background: #fff;
+    color: $tip_color;
+    border-radius: px2rem(44);
+    border:1px solid $tip_color;
+}
+
+.btn-operate {
+    width: px2rem(144);
+    height: px2rem(72);
+    line-height: px2rem(72);
+    border-radius: px2rem(36);
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 px2rem(8) px2rem(27) 0 
+    rgba(255, 192, 0, 0.35);
+}
+.common-btn-primary {
+    width: px2rem(144);
+    height: px2rem(64);
+    line-height: px2rem(64);
+    border-radius: px2rem(32);
+    text-align: center;
+    color: $tip_color;
+    border:1px solid $tip_color;
+    font-size: px2rem(24);
+}
+.common-btn-selected {
+    width: px2rem(144);
+    height: px2rem(64);
+    line-height: px2rem(64);
+    border-radius: px2rem(32);
+    text-align: center;
+    color: #fff;
+    background: #ffc800;
+    border:1px solid #ffc800;
+    font-size: px2rem(24);
+}
+
+// 背景
+.bg-yellow {
+    background: $yellow_color;
+}
+.bg-white {
+    background: #fff;
+}
+.bg-grey {
+    background: #f8f8f8;
+}
+.bg-linear-red {
+    background-image: linear-gradient(135deg, 
+    #ff7531 0%, 
+    #ff4800 100%), 
+linear-gradient(
+    #ff4800, 
+    #ff4800);
+}
+.bg-linear-yellow {
+    background-image: linear-gradient(90deg, 
+		#f3d400 0%, 
+		#ffc000 100%), 
+	linear-gradient(
+		#ff4800, 
+		#ff4800);
+}
+// common header
+.phone-statusbar-height{
+    height: px2rem(60);
+    width: 100%;
+    // edit----------
+    // background: #fff;
+    // background: red;
+}
+.common-header-container .mint-header{
+    box-sizing: content-box;
+    background-color: #fff;
+    font-size: px2rem(16);
+    text-align: center;
+    color: #000;
+    height: px2rem(88);
+    // -----------
+    // padding-top: px2rem(60);
+    line-height:normal;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    vertical-align: middle;
+    &.is-fixed{
+        z-index: 2;
+    }
+    .mint-header-title{
+        font-size: px2rem(36);
+        font-weight: bold;
+    }
+}
+.common-header-height{
+    // ---------
+    height: px2rem(88);
+    width: 100%;
+    // background: #f8f8f8;
+}
+// common content-padding
+.common-content-padding {
+    padding: 0 px2rem(20);
+  
+}
+
+// common-order-item
+.common-order-item{
+    margin-bottom: px2rem(20);
+    background: #fff;
+    color: $title_light_color;
+    padding: px2rem(52) px2rem(26) px2rem(26) px2rem(26);
+    box-shadow: 0px px2rem(8) px2rem(24) 0px 
+    rgba(0, 0, 0, 0.1);
+border-radius: px2rem(10);
+    &:nth-child(1){
+        margin-top: px2rem(20);
+    }
+    .normal-desc{
+        font-size: px2rem(24);
+    }
+    .station{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: px2rem(40);
+        p:nth-child(1) {
+            font-size: px2rem(32);
+            color: $title_deep_color;
+            font-weight: bold;
+            margin-right: px2rem(20);
+        }
+    }
+    .time{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        .left{
+            margin-right: px2rem(20);
+        }
+        .time-content{
+            margin: 0 px2rem(15);
+            font-size: px2rem(34);
+            color: $title_deep_color;
+            font-weight: bold;
+        }
+    }
+    .price,.partner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left{
+            display: flex;
+            align-items: center;
+            span:nth-child(2){
+                margin: 0 px2rem(12);
+            }
+        }
+    }
+}
+
+// common selectors
+.common-selectors-wrap {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: px2rem(126);
+    background: #f8f8f8;
+}
+.common-selectors {
+    padding: px2rem(30) px2rem(40);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+// .common-selectors {
+//     position: fixed;
+//     width: 100%;
+//     z-index: 3;
+//     background: #f8f8f8;
+//     box-sizing: border-box;
+//     padding: 0 px2rem(40);
+//     height: px2rem(106);
+//     display: flex;
+//     align-items: center;
+//     padding-bottom: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     // background-color: red;
+// }
+.common-selectors-height{
+    // height: px2rem(106);
+    width: 100%;
+}
+
+// 提示框
+.mint-msgbox {
+    border-radius: px2rem(26)!important;
+}
+.mint-msgbox-title, .mint-msgbox-confirm, .mint-msgbox-cancel {
+    font-size: px2rem(40)!important;
+}
+.mint-msgbox-btns {
+    height: px2rem(88)!important;
+}
+.mint-msgbox-message {
+    color: #000!important;
+}
+
+// Mint-UI Message Box 
+.mint-msgbox-content {}
+.mint-msgbox-header {}
+.mint-msgbox-confirm {
+    color: $yellow_color!important;
+}
+
+.mint-header {
+    height: px2rem(132)!important;
+    h1 {
+        font-size: px2rem(40)!important;
+    }
+}
+.mint-navbar {
+    .mint-tab-item {
+        .mint-tab-item-label {
+            font-size: px2rem(34)!important;
+        }
+    }
+}
+
+// mescroll
+.mescroll-empty { // 空数据提示区域类名
+    padding-top: 30%!important;
+}
+.empty-tip {} // 文字类名
+.empty-icon {} // icon图标类名
+
+.mint-indicator-wrapper {
+    background-color: rgba(0,0,0,0)!important;
+}
+

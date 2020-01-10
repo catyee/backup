@@ -1,0 +1,39 @@
+.income-detail-container {
+    .navbar-header{
+        height: px2rem(88);
+        width: 100%;
+        background: #fff;
+    }
+    .mint-navbar {
+        .mint-tab-item{
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0 px2rem(40);
+            height: px2rem(88);
+            justify-content: center;
+            font-size: px2rem(30);
+            color: $tip_color;
+            .mint-tab-item-label {
+                font-size: px2rem(30);
+                font-family: $font-Medium;
+            }
+        }
+    }
+    .mint-navbar.is-fixed {
+        top: auto;
+    }
+    .mint-navbar .mint-tab-item.is-selected{
+        border-bottom: none;
+        color: #000;
+        &::after{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            content: '';
+            width: px2rem(100);
+            height: px2rem(4);
+            background-color: #ffc200;
+        }
+    }
+}
