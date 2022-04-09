@@ -11,7 +11,7 @@
     "fastclick": "^1.0.6",
     "mescroll.js": "^1.4.0",
     "mint-ui": "^2.2.13",
-    "moment": "^2.23.0",
+    "moment": "^2.29.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.2"
   },
